@@ -1,0 +1,7 @@
+make: Entering directory '/workspace/scratch/a111ff184d42/fpga_projects'
+verilator --lint-only -Wall --top-module i2c_controller rtl/i2c_controller.sv
+verilator --lint-only -Wall --top-module dma_controller rtl/dma_controller.sv
+verilator --lint-only -Wall --top-module rr_arbiter rtl/rr_arbiter.sv
+verilator --lint-only -Wall --top-module de10_dma_top rtl/dma_controller.sv rtl/rr_arbiter.sv board/reset_release.sv board/de10_dma_top.sv
+verilator --lint-only -Wall --top-module de10_i2c_top rtl/i2c_controller.sv board/reset_release.sv board/de10_i2c_top.sv
+make: Leaving directory '/workspace/scratch/a111ff184d42/fpga_projects'

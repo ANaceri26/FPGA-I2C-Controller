@@ -1,0 +1,9 @@
+vvp -M /workspace/scratch/a111ff184d42/local-tools/usr/lib/x86_64-linux-gnu/ivl results/tb_i2c +N=1000 +SEED=42
+PASS I2C: 1000 randomized write/read transactions, 9010 byte commands + fault/reset tests
+sim/tb_i2c.sv:86: $finish called at 28929121000 (1ps)
+vvp -M /workspace/scratch/a111ff184d42/local-tools/usr/lib/x86_64-linux-gnu/ivl results/tb_dma +N=1000 +SEED=42
+PASS DMA: 1000 randomized copies, 260838 shared-bus beats, 134165 CPU completions + fault/reset tests
+sim/tb_dma.sv:107: $finish called at 6959221000 (1ps)
+vvp -M /workspace/scratch/a111ff184d42/local-tools/usr/lib/x86_64-linux-gnu/ivl results/tb_board
+PASS board demos: ADXL345 ID E5 via wire model; 64 DMA words copied and checked
+sim/tb_board.sv:21: $finish called at 23260000 (1ps)

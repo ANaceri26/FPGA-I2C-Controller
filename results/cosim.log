@@ -1,0 +1,2 @@
+PASS C/RTL I2C: 100 write/read pairs (1600 payload bytes), NACK, invalid inputs, timeouts, recovery
+PASS C/RTL DMA: 500 randomized copies, IRQ, validation, busy, bus error, timeouts, recovery
